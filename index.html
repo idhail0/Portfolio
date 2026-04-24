@@ -1,46 +1,52 @@
 <!DOCTYPE html>
-<html lang="ar">
-<html lang="en">
-      <head>
-           <meta charset="UTF-8">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <title>idhai.l profile</title>
-           <link rel="stylesheet" type="text/css" href="css.css">
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-      </head>
-     
-      <body>
-            <nav class="sidebar" id="sidebar">
-                 <ul class="midnav">
-                     <li><a href="#home">Home</a></li>
-                     <li><a href="#about">About Me</a></li>
-                     <li><a href="#skills">Skills</a></li>
-                     <li><a href="#experience">Experience</a></li>
-                     <li><a href="#projects">Projects</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                 </ul>
-             </nav>
-             <main class="main-content" id="main-content">
-                <header id="home">
-                    <div class="topdawn">
-                         <h1>Mohammad Abu Idhail</h1>
-                         <p class="subtitle">Web Developer & General Manager</p>
-                    </div>
-                </header>
-                <div id="toggle-btn" class="toggle-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minimalist portfolio and CV for Mohammad Abu Idhail.">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Mohammad Abu Idhail | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
+</head>
+<body>
 
-                <section id="about" class="cv-section">
-                    <h2><i class="icon">👤</i> Professional Summary</h2>
-                    <p>Motivated Computer Engineering student at Istanbul Esenyurt University with a strong foundation in Front-End Web Development (HTML, CSS, JavaScript). Combines technical coding skills with practical business management experience gained as a General Manager in a family-owned HVAC company. Proven track record in financial management, digital marketing, and data organization. Eager to leverage diverse expertise and technical knowledge to contribute to dynamic software development teams.</p>
-                    
+    <main class="main-content" id="main-content">
+        <section id="home" class="hero-card">
+            <p class="eyebrow">Relaxed Portfolio / CV</p>
+            <div class="hero-copy">
+                <h1>Mohammad Abu Idhail</h1>
+                <p class="subtitle">Web Developer &amp; General Manager</p>
+                <p class="hero-text">A calm, polished snapshot of front-end work, management experience, and practical problem solving.</p>
+            </div>
+            <div class="hero-meta">
+                <span>Computer Engineering Student</span>
+                <span>Front-End Development</span>
+                <span>Smartphone Repair Apprentice & Technician</span>
+            </div>
+        </section>
+
+        <section id="about" class="cv-section">
+            <div class="section-heading">
+                <p class="section-kicker">Profile</p>
+                <h2>Professional Summary</h2>
+            </div>
+            <p>Motivated Computer Engineering student at Istanbul Esenyurt University with a strong foundation in Front-End Web Development (HTML, CSS, JavaScript). Combines technical coding skills with practical business management experience gained as a General Manager in a family-owned HVAC company. Proven track record in financial management, digital marketing, and data organization. Eager to leverage diverse expertise and technical knowledge to contribute to dynamic software development teams.</p>
+
+            <div class="section-divider"></div>
+
+            <div class="content-grid">
+                <article class="content-block">
                     <h3>Education</h3>
                     <p><strong>2025–Present:</strong> Bachelor of Science in Computer Engineering, Istanbul Esenyurt University, Istanbul, Turkey<br>
                     <em>Focus on software engineering, algorithms, and web technologies.</em></p>
-                    
+                </article>
+
+                <article class="content-block">
                     <h3>Technical Skills</h3>
                     <div class="skills-grid">
                         <div class="skill-category">
@@ -52,7 +58,7 @@
                             <p>Python (Basic), C++ (Basic)</p>
                         </div>
                         <div class="skill-category">
-                            <h4>Tools & Software</h4>
+                            <h4>Tools &amp; Software</h4>
                             <p>VS Code, Git, Microsoft Excel (Advanced), Canva (Design)</p>
                         </div>
                         <div class="skill-category">
@@ -60,98 +66,110 @@
                             <p>Leadership, Time Management, Adaptability, Communication</p>
                         </div>
                     </div>
-                </section>
+                </article>
+            </div>
+        </section>
 
-                <section id="skills" class="cv-section">
-                    <h2><i class="icon">🛠️</i> Technical Skills</h2>
-                    <div class="skills-container">
-                        <span class="skill-badge">HTML5</span>
-                        <span class="skill-badge">CSS3</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">C++</span>
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">Microsoft Excel</span>
-                        <span class="skill-badge">Canva</span>
-                        <span class="skill-badge">Responsive Design</span>
-                    </div>
-                </section>
+        <section id="skills" class="cv-section">
+            <div class="section-heading">
+                <p class="section-kicker">Toolkit</p>
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="skills-container">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Microsoft Excel</span>
+                <span class="skill-badge">Canva</span>
+                <span class="skill-badge">Responsive Design</span>
+            </div>
+        </section>
 
-                <section id="experience" class="cv-section">
-                    <h2><i class="icon">💼</i> Experience</h2>
-                    <div class="job">
-                        <h3>General Manager - Nasma Ittid for Air Conditioning Systems & Family Business</h3>
-                        <p class="date">Present</p>
-                        <ul>
-                            <li>Oversee daily business operations, ensuring efficient workflow between technicians and clients</li>
-                            <li>Manage company accounts, including preparing account reports and price quotations</li>
-                            <li>Utilize Microsoft Excel for data organization and financial analysis</li>
-                            <li>Direct social media marketing strategies and create content using Canva to increase brand visibility</li>
-                        </ul>
-                    </div>
-                </section>
+        <section id="experience" class="cv-section">
+            <div class="section-heading">
+                <p class="section-kicker">Background</p>
+                <h2>Experience</h2>
+            </div>
+            <article class="job content-block">
+                <h3>General Manager - Nasma Ittid for Air Conditioning Systems &amp; Family Business</h3>
+                <p class="date">Present</p>
+                <ul>
+                    <li>Oversee daily business operations, ensuring efficient workflow between technicians and clients</li>
+                    <li>Manage company accounts, including preparing account reports and price quotations</li>
+                    <li>Utilize Microsoft Excel for data organization and financial analysis</li>
+                    <li>Direct social media marketing strategies and create content using Canva to increase brand visibility</li>
+                </ul>
+            </article>
+        </section>
 
-                <section id="projects" class="cv-section">
-                    <h2><i class="icon">🚀</i> Projects</h2>
-                    <div class="projects-container">
-                        <div class="project-card">
-                            <h3>ATHKARE - Web Application</h3>
-                            <p class="date">2024</p>
-                            <p>Designed and developed a responsive web application for daily remembrances using HTML, CSS, and JavaScript.</p>
-                            <a href="https://idhail0.github.io/ATHKARE/" class="project-link">View Project</a>
-                        </div>
-                        <div class="project-card">
-                            <h3>TODO List - Web Application</h3>
-                            <p class="date">2024</p>
-                            <p>Built a dynamic task management tool allowing users to create, update, and delete tasks with real-time DOM manipulation.</p>
-                            <a href="https://idhail0.github.io/todo/" class="project-link">View Project</a>
-                        </div>
-                        <div class="project-card">
-                            <h3>Portfolio Website - Personal Project</h3>
-                            <p class="date">2024</p>
-                            <p>Created a personal portfolio to showcase technical projects and skills, featuring a modern and responsive UI design.</p>
-                            <a href="#" class="project-link">View Project</a>
-                        </div>
-                    </div>
-                </section>
+        <section id="projects" class="cv-section">
+            <div class="section-heading">
+                <p class="section-kicker">Selected Work</p>
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>ATHKARE - Web Application</h3>
+                    <p class="date">2024</p>
+                    <p>Designed and developed a responsive web application for daily remembrances using HTML, CSS, and JavaScript.</p>
+                    <a href="https://idhail0.github.io/ATHKARE/" class="project-link" target="_blank" rel="noreferrer noopener">View Project</a>
+                </article>
+                <article class="project-card">
+                    <h3>TODO List - Web Application SOON</h3>
+                    <p class="date">2024</p>
+                    <p>Built a dynamic task management tool allowing users to create, update, and delete tasks with real-time DOM manipulation.</p>
+                    <a href="0" class="project-link" target="_blank" rel="noreferrer noopener">View Project</a>
+                </article>        
+            </div>
+        </section>
 
-                <footer id="contact" class="cv-section">
-                    <h2><i class="icon">📜</i> Certifications</h2>
-                    <ul class="certifications-list">
-                        <li>Python Programming - Sair Platform (Tawsia Academy) | 2023</li>
-                        <li>C++ Programming - Sair Platform (Tawsia Academy) | 2023</li>
-                        <li>JavaScript Development - Sair Platform (Tawsia Academy) | 2024</li>
-                        <li>CSS & HTML - Sair Platform (Tawsia Academy) | 2024</li>
-                    </ul>
-                    
-                    <h2><i class="icon">🌐</i> Languages</h2>
-                    <ul class="languages-list">
-                        <li><strong>Arabic:</strong> Native Proficiency</li>
-                        <li><strong>English:</strong> Conversational Proficiency</li>
-                        <li><strong>Turkish:</strong> Conversational Proficiency</li>
-                    </ul>
-                    
-                    <h2><i class="icon">📞</i> Contact & Social</h2>
-                    <div class="contact-info">
-                        <p>📧 Email: abuidhail23@gmail.com | 📱 Phone: +90 5531789215</p>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/idhai.l/" target="_blank" title="Instagram">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://github.com/idhail0" target="_blank" title="GitHub">
-                          <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://discord.com/users/886971004029657119" target="_blank" title="Discord">
-                          <i class="fab fa-discord"></i>
-                        </a>
-                    </div>
-                    <div class="po">
-                        <h4> MADE BY &copy;idhail  </h4>
-                    </div>
-                </footer>
-            </main>
-            <script src="js.js"></script>
-      </body>
+        <footer id="contact" class="cv-section">
+            <div class="section-heading">
+                <p class="section-kicker">Proof</p>
+                <h2>Certifications</h2>
+            </div>
+            <ul class="certifications-list">
+                <li>Python Programming - Sair Platform (Tawsia Academy) | 2023</li>
+                <li>C++ Programming - Sair Platform (Tawsia Academy) | 2023</li>
+                <li>JavaScript Development - Sair Platform (Tawsia Academy) | 2024</li>
+                <li>CSS &amp; HTML - Sair Platform (Tawsia Academy) | 2024</li>
+            </ul>
+
+            <div class="section-heading section-heading--spaced">
+                <p class="section-kicker">Language</p>
+                <h2>Languages</h2>
+            </div>
+            <ul class="languages-list">
+                <li><strong>Arabic:</strong> Native Proficiency</li>
+                <li><strong>English:</strong> Conversational Proficiency</li>
+                <li><strong>Turkish:</strong> Conversational Proficiency</li>
+            </ul>
+
+            <div class="section-heading section-heading--spaced">
+                <p class="section-kicker">Contact</p>
+                <h2>Contact &amp; Social</h2>
+            </div>
+            <p class="contact-info">Email: abuidhail23@gmail.com | Phone: +90 5531789215</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/idhai.l/" target="_blank" rel="noreferrer noopener" title="Instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/idhail0" target="_blank" rel="noreferrer noopener" title="GitHub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://discord.com/users/886971004029657119" target="_blank" rel="noreferrer noopener" title="Discord" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+            <div class="po">
+                <h4>MADE BY &copy; idhail</h4>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js.js"></script>
+</body>
 </html>
-
