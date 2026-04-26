@@ -46,7 +46,7 @@ const ThemeEngine = (() => {
             const saved = localStorage.getItem(STORAGE_KEY);
             if (saved) return saved;
         } catch (e) {
-            console.debug('localStorage unavailable');
+            // localStorage unavailable
         }
         
        
@@ -77,7 +77,7 @@ const ThemeEngine = (() => {
         try {
             localStorage.setItem(STORAGE_KEY, theme);
         } catch (e) {
-            console.debug('localStorage unavailable:', e);
+            // localStorage unavailable
         }
         
         
@@ -119,7 +119,6 @@ const ThemeEngine = (() => {
                     setTheme(e.matches ? 'dark' : 'light');
                 }
             } catch (e) {
-                console.debug('localStorage unavailable');
                 setTheme(e.matches ? 'dark' : 'light');
             }
         });
@@ -212,15 +211,10 @@ const CVTooltip = (() => {
 
     const init = () => {
         const logoBtn = document.getElementById('logo-btn');
-        if (!logoBtn) {
-            console.log('Logo button not found');
-            return;
-        }
+        if (!logoBtn) return;
 
-       
         showTooltip(logoBtn);
 
-       
         logoBtn.addEventListener('mouseenter', () => {
             if (!isTooltipVisible) {
                 showTooltip(logoBtn);
@@ -230,22 +224,15 @@ const CVTooltip = (() => {
 
     const showTooltip = (logoBtn) => {
         const tooltip = logoBtn.querySelector('.cv-tooltip');
-        if (!tooltip) {
-            console.log('Tooltip not found');
-            return;
-        }
+        if (!tooltip) return;
 
-        
         if (tooltipTimeout) {
             clearTimeout(tooltipTimeout);
         }
 
-        
         isTooltipVisible = true;
         tooltip.classList.add('visible');
-        console.log('Tooltip shown');
 
-        
         tooltipTimeout = setTimeout(() => {
             hideTooltip(tooltip);
         }, TOOLTIP_DURATION);
@@ -260,24 +247,8 @@ const CVTooltip = (() => {
 })();
 
 
-function initializeTooltip() {
-    console.log('Initializing tooltip...');
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => CVTooltip.init());
+} else {
     CVTooltip.init();
 }
-
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeTooltip);
-} else if (document.readyState === 'interactive') {
-    document.addEventListener('DOMContentLoaded', initializeTooltip);
-} else {
-   
-    if (document.body) {
-        initializeTooltip();
-    } else {
-        document.addEventListener('DOMContentLoaded', initializeTooltip);
-    }
-}
-
-
-window.addEventListener('load', initializeTooltip);
