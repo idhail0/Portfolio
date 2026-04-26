@@ -5,15 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Minimalist portfolio and CV for Mohammad Abu Idhail.">
     <meta name="theme-color" content="#1a1a1a">
-    <title>Mohammad Abu Idhail | Portfolio</title>
+    <title>Idhail | Portfolio</title>
+     <link rel="website icon" type="png" href="logo.HkfgnA">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+      
+        (function initTheme() {
+            const htmlEl = document.documentElement;
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            try {
+                const saved = localStorage.getItem('theme-preference');
+                const theme = saved || (prefersDark ? 'dark' : 'light');
+                
+                if (theme === 'dark') {
+                    htmlEl.classList.add('dark-mode');
+                } else {
+                    htmlEl.classList.remove('dark-mode');
+                }
+            } catch (e) {
+                // localStorage not available, use system preference
+                if (prefersDark) {
+                    htmlEl.classList.add('dark-mode');
+                }
+            }
+        })();
+    </script>
     <script>document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js');</script>
 </head>
 <body>
+
+    <!-- App Header with Theme Toggle -->
+    <header class="app-header">
+        <div class="header-container">
+            <div class="header-brand">
+                <a href="https://drive.google.com/file/d/1-en3zZy4DUZPzM35rT9GFLc1eo1hhqg3/view?usp=sharing/" target="_blank" rel="noreferrer noopener" class="logo-btn" aria-label="CV" title="View CV" id="logo-btn">
+                    <img src="logo.HkfgnA" alt="Logo" class="logo-img">
+                    <!-- CV Tooltip -->
+                    <div class="cv-tooltip" aria-hidden="true">
+                        <div class="tooltip-content">
+                            <span class="tooltip-text">VIEW CV</span>
+                            <svg class="tooltip-arrow" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <path d="M 50 80 Q 40 50 50 20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <polygon points="50,15 45,25 55,25" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button 
+                class="theme-toggle" 
+                id="theme-toggle" 
+                aria-label="Toggle dark mode"
+                title="Toggle theme (Light/Dark)"
+            >
+                <span class="icon sun-icon">☀️</span>
+                <span class="icon moon-icon">🌙</span>
+            </button>
+        </div>
+    </header>
 
     <main class="main-content" id="main-content">
         <section id="home" class="hero-card">
@@ -48,7 +102,6 @@
 
                 <article class="content-block">
                     <h3>Technical Skills</h3>
-                    <div class="skills-grid">
                         <div class="skill-category">
                             <h4>Web Development</h4>
                             <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design</p>
