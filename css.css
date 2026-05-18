@@ -1015,6 +1015,75 @@ footer#contact {
     margin-bottom: 0;
 }
 
+/* Save Button Styles */
+.footer-save-button {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.save-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--accent);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: 
+        background-color var(--duration-md) var(--motion-smooth),
+        border-color var(--duration-md) var(--motion-smooth),
+        color var(--duration-md) var(--motion-smooth),
+        transform 0.2s var(--motion-ease),
+        box-shadow 0.2s var(--motion-ease);
+    box-shadow: var(--shadow-sm);
+    text-transform: uppercase;
+}
+
+.save-btn:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent-strong);
+    color: var(--accent-strong);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-0.125rem);
+}
+
+.save-btn:active {
+    transform: translateY(0.125rem);
+    box-shadow: var(--shadow-sm);
+}
+
+.save-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 0.25rem;
+}
+
+.save-btn i {
+    font-size: 1.1em;
+    transition: transform var(--duration-md) var(--motion-ease);
+}
+
+.save-btn:hover i {
+    transform: scale(1.15);
+}
+
+html.dark-mode .save-btn {
+    border-color: #c9a876;
+    color: #c9a876;
+}
+
+html.dark-mode .save-btn:hover {
+    background: rgba(201, 168, 118, 0.12);
+    border-color: #e0c09b;
+    color: #e0c09b;
+}
 
 
 .theme-toggle {
